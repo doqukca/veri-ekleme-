@@ -1,0 +1,150 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Sayfa Başlığı */
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tablo Stili */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Silme Formu */
+.confirmation {
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.confirmation label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.confirmation input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.confirmation button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.confirmation button:hover {
+    background-color: #45a049;
+}
+
+/* Kullanıcı Profil Kartı */
+.user-profile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.profile-email {
+    font-size: 14px;
+    color: #666;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-items {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.menu-items.show {
+    display: block;
+}
+
+.menu-items a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-items a:hover {
+    background-color: #f0f0f0;
+}
