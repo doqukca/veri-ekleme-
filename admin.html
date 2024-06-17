@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <h2>Admin Paneli</h2>
+            <ul>
+                <li><a href="admin.html">Veri Ekle</a></li>
+                <li><a href="index.html">Anasayfaya Dön</a></li>
+                <li><a href="arama.html">Arama Yapın</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Veri Ekle</h2>
+            <form id="addForm">
+                <label for="name">İsim:</label>
+                <input type="text" id="name" required>
+
+                <label for="status">Durum:</label>
+                <select id="status">
+                    <option value="olumlu">Olumlu</option>
+                    <option value="olumsuz">Olumsuz</option>
+                    <option value="sabit">Sabit</option>
+                </select>
+
+                <label for="address">Adres:</label>
+                <input type="text" id="address" required>
+
+                <label for="date">Tarih:</label>
+                <input type="date" id="date" required>
+
+                <button type="submit">Ekle</button>
+            </form>
+        </div>
+    </div>
+    <script src="jss/admin.js"></script>
+    <!-- Diğer HTML dosyalarının sonunda -->
+
+</body>
+
+</html>
